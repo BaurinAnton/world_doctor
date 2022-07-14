@@ -1,0 +1,67 @@
+.column {
+  position: relative;
+
+  .centerCircle {
+    position: absolute;
+    top: 171px;
+    left: calc(50% - 157.5px);
+
+    .text {
+      position: absolute;
+      bottom: 44px;
+      left: 85px;
+      font-size: 30px;
+      font-weight: 700;
+      color: var(--color-subtitle);
+    }
+
+    .image {
+      border-radius: 100%;
+      opacity: 0.7;
+    }
+  }
+
+  .sympton {
+    position: relative;
+  }
+
+  // .sympton:nth-of-type(1) {
+  //   left: calc(50% - 57.5px);
+  // }
+
+  // .sympton:nth-of-type(2) {
+  //   left: calc(50% + 155px);
+  //   top: 75px;
+  // }
+
+  // .sympton:nth-of-type(3) {
+  //   left: calc(50% + 230px);
+  //   top: 268px;
+  // }
+
+  // .sympton:nth-of-type(4) {
+  //   left: calc(50% + 155px);
+  //   top: 460px;
+
+  // }
+
+  // .sympton:nth-of-type(5) {
+  //   left: calc(50% - 57.5px);
+  //   top: 541px;
+  // }
+
+  // .sympton:nth-of-type(6) {
+  //   left: calc(50% - 270px);
+  //   top: 460px;
+  // }
+
+  // .sympton:nth-of-type(7) {
+  //   left: calc(50% - 335px);
+  //   top: 268px;
+  // }
+
+  // .sympton:nth-of-type(8) {
+  //   left: calc(50% - 270px);
+  //   top: 85px;
+  // }
+}

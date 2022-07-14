@@ -1,10 +1,8 @@
-import type { NextPage } from 'next'
+import { NextPage } from "next";
+import { HomeTemplate } from "@modules/main";
 
-const Home: NextPage = () => {
-  return (
-    <>
-    </>
-  )
-}
+const HomePage: NextPage = () => {
+  return <HomeTemplate />;
+};
 
-export default Home
+export default HomePage;

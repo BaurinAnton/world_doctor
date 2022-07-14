@@ -1,0 +1,1 @@
+export { BadgeWrapperComponent } from "./component";
