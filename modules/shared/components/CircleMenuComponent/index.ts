@@ -1,0 +1,1 @@
+export { CicrleMenuComponent } from './component'

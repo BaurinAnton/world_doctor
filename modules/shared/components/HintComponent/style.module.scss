@@ -1,8 +1,6 @@
 .hintComponent {
-  position: relative;
   cursor: help;
   width: fit-content;
-
   p {
     position: absolute;
 
@@ -11,13 +9,11 @@
     font-weight: 700;
     color: var(--color-title);
     line-height: 22px;
-
-    width: 0;
-    overflow: hidden;
+    display: none;
   }
 
   &:hover p {
-    width: 242px;
+    display: block;
     overflow: visible;
   }
 }

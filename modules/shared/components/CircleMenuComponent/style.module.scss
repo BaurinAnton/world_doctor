@@ -1,0 +1,32 @@
+.circleMenu {
+  position: absolute;
+  top: 171px;
+  left: calc(50% - 157.5px);
+  @media (max-width: 768px) {
+    left: calc(50% - 52.5px);
+    top: 29%;
+  }
+  .text {
+    position: absolute;
+    bottom: 44px;
+    left: calc(50% - 71.5px);
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--color-subtitle);
+    @media (max-width: 768px) {
+      left: calc(50% - 40px);
+      bottom: 25px;
+      font-size: 16px;
+    }
+  }
+  .imageContainer {
+    @media (max-width: 768px) {
+      width: 105px;
+      height: 105px;
+    }
+    .image {
+      border-radius: 100%;
+      opacity: 0.7;
+    }
+  }
+}

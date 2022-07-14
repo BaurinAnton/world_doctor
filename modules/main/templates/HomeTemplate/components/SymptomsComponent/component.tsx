@@ -1,15 +1,18 @@
-import { BadgeWrapperComponent } from "@modules/shared";
-import { HintComponent } from "@modules/shared/components";
+import cs from "classnames";
 import Image from "next/image";
 
-import { SYMPTON, CENTER_CIRCLE, BADGE_ICON_IMG } from "./constants";
+import {
+  BadgeWrapperComponent,
+  HintComponent,
+  CicrleMenuComponent
+} from "@modules/shared";
+import { SYMPTON, BADGE_ICON_IMG } from "./constants";
 
 import style from "./style.module.scss";
 
 export const SymptomsComponent = () => (
   <div className={style.column}>
-    // TODO: Сделать через формулу рисовать круговую диаграмму И если сможешь,
-    то вынести после это в отдельный шаред компонент
+    <CicrleMenuComponent />
     {SYMPTON.map(({ text, imageSympton }, id) => (
       <HintComponent
         hintText={text}
@@ -26,24 +29,16 @@ export const SymptomsComponent = () => (
             />
           }
         >
-          <Image
-            src={imageSympton.src}
-            alt={imageSympton.alt}
-            width={imageSympton.width}
-            height={imageSympton.height}
-          />
+          <div className={style.imageSympton}>
+            <Image
+              src={imageSympton.src}
+              alt={imageSympton.alt}
+              width={imageSympton.width}
+              height={imageSympton.height}
+            />
+          </div>
         </BadgeWrapperComponent>
       </HintComponent>
     ))}
-    <div className={style.centerCircle}>
-      <Image
-        src={CENTER_CIRCLE.image.src}
-        alt={CENTER_CIRCLE.image.alt}
-        width={CENTER_CIRCLE.image.width}
-        height={CENTER_CIRCLE.image.height}
-        className={style.image}
-      />
-      <span className={style.text}>{CENTER_CIRCLE.text}</span>
-    </div>
   </div>
 );
