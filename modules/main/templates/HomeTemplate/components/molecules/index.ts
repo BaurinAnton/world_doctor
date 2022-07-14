@@ -1,0 +1,1 @@
+export { SymptomsComponent } from "./SymptomsComponent";

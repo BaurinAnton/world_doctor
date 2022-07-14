@@ -1,6 +1,7 @@
 .hintComponent {
-  cursor: help;
+  cursor: pointer;
   width: fit-content;
+
   p {
     position: absolute;
 
@@ -10,10 +11,10 @@
     color: var(--color-title);
     line-height: 22px;
     display: none;
-  }
 
-  &:hover p {
-    display: block;
-    overflow: visible;
+    &.isOpen {
+      display: block;
+      overflow: visible;
+    }
   }
 }

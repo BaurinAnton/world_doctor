@@ -1,5 +1,5 @@
 .homeTemplate {
-  .container:nth-of-type(1) {
+  .titleContainer {
     padding-top: 34px;
 
     h1 {
@@ -8,41 +8,53 @@
       color: var(--color-title);
       margin-bottom: 10px;
       text-align: center;
+
       @media (max-width: 768px) {
         font-size: 25px;
       }
     }
+  }
+
+  .cardsContainer {
     h2 {
       font-size: 36px;
       font-weight: 700;
       color: var(--color-title);
       margin-bottom: 43px;
       text-align: center;
+
       @media (max-width: 768px) {
         font-size: 22.5px;
         margin-bottom: 26px;
       }
     }
+
     .row {
       display: flex;
       justify-content: space-between;
+
       @media (max-width: 1280px) {
         flex-direction: column;
       }
     }
   }
-  .container:nth-of-type(2) {
+
+  .symptonsContainer {
     margin-top: 89px;
+
     @media (max-width: 768px) {
       margin-top: 20px;
     }
+
     .row:nth-of-type(1) {
       margin-bottom: 111px;
       line-height: 22px;
+
       span:nth-of-type(1) {
         color: var(--color-title);
         font-size: 18px;
         font-weight: 700;
+
         @media (max-width: 768px) {
           font-size: 14px;
         }
@@ -52,6 +64,7 @@
         font-size: 14px;
         font-weight: 500;
         color: var(--color-subtitle);
+
         @media (max-width: 768px) {
           font-size: 12px;
         }
@@ -62,6 +75,7 @@
       display: flex;
       justify-content: center;
       padding-bottom: 135px;
+
       @media (max-width: 768px) {
         padding-bottom: 84px;
       }

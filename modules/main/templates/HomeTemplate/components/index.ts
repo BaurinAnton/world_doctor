@@ -1,1 +1,1 @@
-export { SymptomsComponent } from "./SymptomsComponent";
+export { SymptomsComponent } from "./molecules";

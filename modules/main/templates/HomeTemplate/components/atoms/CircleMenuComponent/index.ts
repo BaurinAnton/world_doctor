@@ -1,0 +1,1 @@
+export { CircleMenuComponent } from "./component";
