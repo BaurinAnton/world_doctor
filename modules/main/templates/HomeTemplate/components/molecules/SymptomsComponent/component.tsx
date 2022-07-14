@@ -10,7 +10,7 @@ import { TEMPLATE_CONTENT } from "../../../constants";
 export const SymptomsComponent = () => (
   <div className={style.column}>
     <CircleMenuComponent className={style.circleMenuComponent} />
-    {TEMPLATE_CONTENT.symptonSection.diagram.subImg.map(
+    {TEMPLATE_CONTENT.symptonsSection.diagram.subImg.map(
       ({ text, imageSympton }, id) => (
         <HintComponent
           hintText={text}
@@ -20,10 +20,12 @@ export const SymptomsComponent = () => (
           <BadgeWrapperComponent
             badge={
               <Image
-                src={TEMPLATE_CONTENT.symptonSection.diagram.badgeImg.src}
-                alt={TEMPLATE_CONTENT.symptonSection.diagram.badgeImg.alt}
-                width={TEMPLATE_CONTENT.symptonSection.diagram.badgeImg.width}
-                height={TEMPLATE_CONTENT.symptonSection.diagram.badgeImg.height}
+                src={TEMPLATE_CONTENT.symptonsSection.diagram.badgeImg.src}
+                alt={TEMPLATE_CONTENT.symptonsSection.diagram.badgeImg.alt}
+                width={TEMPLATE_CONTENT.symptonsSection.diagram.badgeImg.width}
+                height={
+                  TEMPLATE_CONTENT.symptonsSection.diagram.badgeImg.height
+                }
               />
             }
           >

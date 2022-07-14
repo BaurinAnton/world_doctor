@@ -1,5 +1,5 @@
 export const TEMPLATE_CONTENT = {
-  mainSection: {
+  titleSection: {
     title: "А вдруг СМА?",
   },
   cardsSection: {
@@ -34,11 +34,9 @@ export const TEMPLATE_CONTENT = {
       },
     ],
   },
-  circleSection: {
+  symptonsSection: {
     title: "Сообщает ли один из ваших пациентов о следующих симптомах? ",
     subTitle: "(нажмите на любую иконку и узнайте больше)",
-  },
-  symptonSection: {
     diagram: {
       badgeImg: {
         src: "/img/plus.svg",

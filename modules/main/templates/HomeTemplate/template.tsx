@@ -10,7 +10,7 @@ import style from "./style.module.scss";
 export const HomeTemplate = () => (
   <article className={style.homeTemplate}>
     <section className={style.titleContainer}>
-      <h1>{TEMPLATE_CONTENT.mainSection.title}</h1>
+      <h1>{TEMPLATE_CONTENT.titleSection.title}</h1>
     </section>
 
     <section className={style.cardsContainer}>
@@ -34,8 +34,8 @@ export const HomeTemplate = () => (
 
     <section className={style.symptonsContainer}>
       <div className={style.row}>
-        <span>{TEMPLATE_CONTENT.circleSection.title}</span>
-        <span>{TEMPLATE_CONTENT.circleSection.subTitle}</span>
+        <span>{TEMPLATE_CONTENT.symptonsSection.title}</span>
+        <span>{TEMPLATE_CONTENT.symptonsSection.subTitle}</span>
       </div>
       <div className={style.row}>
         <SymptomsComponent />

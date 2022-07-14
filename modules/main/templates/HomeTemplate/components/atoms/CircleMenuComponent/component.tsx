@@ -14,7 +14,7 @@ export const CircleMenuComponent: React.FC<TProps> = ({ className }) => {
     <div className={cs(style.circleMenu, className)}>
       <div className={style.imageContainer}>
         <Image
-          src={TEMPLATE_CONTENT.symptonSection.diagram.mainImg.image.src}
+          src={TEMPLATE_CONTENT.symptonsSection.diagram.mainImg.image.src}
           alt={CIRCLE_MENU.image.alt}
           width={CIRCLE_MENU.image.width}
           height={CIRCLE_MENU.image.height}
